@@ -1,0 +1,21 @@
+{
+  "name": "mrs-api",
+  "module": "./src/server.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "start": "bun ./src/server.ts",
+    "dev": "bun --hot ./src/server.ts",
+    "seed": "bun run ./src/db/seed.ts"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
+  }
+}
